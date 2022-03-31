@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/reactive-site-creator-live/static/css/main.d2aa0473.css",
-    "main.js": "/reactive-site-creator-live/static/js/main.4fb4040f.js",
+    "main.css": "/reactive-site-creator-live/static/css/main.fd0a4859.css",
+    "main.js": "/reactive-site-creator-live/static/js/main.57da5f1a.js",
     "static/js/787.3e289e0c.chunk.js": "/reactive-site-creator-live/static/js/787.3e289e0c.chunk.js",
     "index.html": "/reactive-site-creator-live/index.html",
-    "main.d2aa0473.css.map": "/reactive-site-creator-live/static/css/main.d2aa0473.css.map",
-    "main.4fb4040f.js.map": "/reactive-site-creator-live/static/js/main.4fb4040f.js.map",
+    "main.fd0a4859.css.map": "/reactive-site-creator-live/static/css/main.fd0a4859.css.map",
+    "main.57da5f1a.js.map": "/reactive-site-creator-live/static/js/main.57da5f1a.js.map",
     "787.3e289e0c.chunk.js.map": "/reactive-site-creator-live/static/js/787.3e289e0c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2aa0473.css",
-    "static/js/main.4fb4040f.js"
+    "static/css/main.fd0a4859.css",
+    "static/js/main.57da5f1a.js"
   ]
 }
