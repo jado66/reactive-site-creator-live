@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/reactive-site-creator-live/static/css/main.66a491d5.css",
-    "main.js": "/reactive-site-creator-live/static/js/main.63f21095.js",
+    "main.js": "/reactive-site-creator-live/static/js/main.99aad4a9.js",
     "static/js/787.3e289e0c.chunk.js": "/reactive-site-creator-live/static/js/787.3e289e0c.chunk.js",
     "index.html": "/reactive-site-creator-live/index.html",
     "main.66a491d5.css.map": "/reactive-site-creator-live/static/css/main.66a491d5.css.map",
-    "main.63f21095.js.map": "/reactive-site-creator-live/static/js/main.63f21095.js.map",
+    "main.99aad4a9.js.map": "/reactive-site-creator-live/static/js/main.99aad4a9.js.map",
     "787.3e289e0c.chunk.js.map": "/reactive-site-creator-live/static/js/787.3e289e0c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.66a491d5.css",
-    "static/js/main.63f21095.js"
+    "static/js/main.99aad4a9.js"
   ]
 }
