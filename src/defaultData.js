@@ -23,14 +23,14 @@ export const defaultSiteData = {
                 name: "Mosaic",
                 id: `Home-Mosaic-1-042 `,
                 content:{
-                    lImageUrl: "",
+                    lImageContent: {},
     
                     lTitle: "Component Based",
                     lSubTitle: "Using Custom React Components",
                     lLinkText: `Components can be found here`,
                     lHref: "/components",
             
-                    rImageUrl: "",
+                    rImageContent: {},
             
                     rTitle: "Everything is Editable",
                     rSubTitle: "Components Can Be dragged",
@@ -497,4 +497,74 @@ export default App;
         }
         ],
     promoCodes:{}
+  }
+
+export const componentStyles = {
+    all:{
+      shadowStyle: "C85 0px 16px 38px -12px, C1f 0px 4px 25px 0px, C33 0px 8px 10px -5px ",
+      borderSize: 0,
+      borderShape: "",
+      borderColor: "darkShade",
+      shadowColor: 'darkShade',
+      linkStyle: "text-decoration-underline"
+
+    },
+    background:{
+      marginColor:"lightShade",
+      backgroundColor: "lightAccent",
+      applyBackground: false
+    },
+    header:{
+      size: "h2",
+      textColor: "darkShade",
+    },
+    mosaic:{
+      arrangement: "LP,RL-LL,RP"
+    },
+    navigationBar:{
+      includeHeader: false,
+      topBarMargin: false,
+      isSticky: false,
+      stickyOffsetY: -4.5,
+      justifyButtons: "justify-content-start",
+      backgroundColor: "darkAccent",
+      textColor: "lightShade",
+      navbarStyle: "fullWidth"
+    },
+    linkBox:{
+      backgroundColor: "lightShade",
+      textColor: "darkShade",
+      linkColor: "darkAccent"
+    },
+    subscriptionCard:{
+      headerTextColor: "lightShade",
+      headerBackgroundColor: "darkAccent",
+      bodyTextColor: "darkShade",
+      bodyBackgroundColor: "lightShade"
+    },
+    subscriberBox:{
+      headerTextColor: "lightShade",
+      backgroundColor: "darkAccent",
+    },
+    pictureFrame:{
+      backgroundColor: "mainBrandColor",
+      padding: "",
+      randomImageKeyword: "cat",
+    },
+    photoGallery:{
+      margin: 8,
+      fullBorder: false
+    },
+    styledLink:{
+      borderShape: 'rounded-6',
+      backgroundColor: "darkAccent",
+      textColor: "lightShade",
+    },
+    footer:{
+      textColor: "darkShade",
+    },
+    textEditor:{
+      backgroundColor: "lightShade",
+      textColor: "darkShade",
+    },
   }
