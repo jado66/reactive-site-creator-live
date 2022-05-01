@@ -506,22 +506,26 @@ export const componentStyles = {
       borderShape: "",
       borderColor: "darkShade",
       shadowColor: 'darkShade',
-      linkStyle: "text-decoration-underline"
+      linkStyle: "text-decoration-underline",
+      includeMargins: true
 
     },
     background:{
       marginColor:"lightShade",
       backgroundColor: "lightAccent",
-      applyBackground: false
+      applyBackground: true
     },
     header:{
+      marginColor:"",
       size: "h2",
       textColor: "darkShade",
     },
     mosaic:{
+      marginColor:"",
       arrangement: "LP,RL-LL,RP"
     },
     navigationBar:{
+      marginColor:"",
       includeHeader: false,
       topBarMargin: false,
       isSticky: false,
@@ -537,33 +541,40 @@ export const componentStyles = {
       linkColor: "darkAccent"
     },
     subscriptionCard:{
+      marginColor:"",
       headerTextColor: "lightShade",
       headerBackgroundColor: "darkAccent",
       bodyTextColor: "darkShade",
       bodyBackgroundColor: "lightShade"
     },
     subscriberBox:{
+      marginColor:"",
       headerTextColor: "lightShade",
       backgroundColor: "darkAccent",
     },
     pictureFrame:{
+      marginColor:"",
       backgroundColor: "mainBrandColor",
       padding: "",
       randomImageKeyword: "cat",
     },
     photoGallery:{
+      marginColor:"",
       margin: 8,
       fullBorder: false
     },
     styledLink:{
+      marginColor:"",
       borderShape: 'rounded-6',
       backgroundColor: "darkAccent",
       textColor: "lightShade",
     },
     footer:{
+      marginColor:"",
       textColor: "darkShade",
     },
     textEditor:{
+      marginColor:"",
       backgroundColor: "lightShade",
       textColor: "darkShade",
     },
