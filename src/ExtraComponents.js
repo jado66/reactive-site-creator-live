@@ -1,7 +1,11 @@
 import { Document, Page, pdfjs, } from 'react-pdf';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faMinus, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { WebContext} from "reactive-site-creator/dist/components/Website"
+import ComponentMargin from "reactive-site-creator/dist/components/subComponents/ComponentMargin"
+
+import {defaultSiteData, defaultWebStyles} from "reactive-site-creator/dist/components/defaultDataEmpty"
 
 const options = {
     cMapUrl: 'cmaps/',
@@ -99,3 +103,72 @@ export function HorizontalBreak(props){
         </div>
     );
 }
+
+export function StartOver(props){
+
+    const {webStyle, appMethods, apiMethods, adminSettings, localDisplaySettings} = useContext(WebContext)
+  
+    let componentStyles = {}
+    try {
+      componentStyles = 
+      {
+        textColor:webStyle.componentStyles.styledLink.textColor,
+        backgroundColor:webStyle.componentStyles.styledLink.backgroundColor
+      }
+    } catch (error) {
+      
+  }
+
+
+    let borderColor = webStyle.colors[webStyle.componentStyles.all.borderColor]  
+    let shadowColor = webStyle.colors[webStyle.componentStyles.all.shadowColor]
+    let borderShape = webStyle.componentStyles.styledLink.borderShape || webStyle.componentStyles.all.borderShape
+
+    let borderAndShadow = ""
+    if (webStyle.componentStyles.all.borderSize!==0){
+        borderAndShadow +=`${borderColor} 0px 1px ${webStyle.componentStyles.all.borderSize*2}px, ${borderColor} 0px 0px 0px ${webStyle.componentStyles.all.borderSize}px, `
+    }
+    borderAndShadow += webStyle.componentStyles.all.shadowStyle.replaceAll('C',shadowColor)
+
+
+    return(
+        <ComponentMargin componentName = "styledLink" webStyle = {webStyle} >
+        <div 
+          className="flex-grow-1 text-center " data-no-dnd="true"
+          style={{...props.style, marginTop:".4em",marginBottom:".4em"}}
+          
+        >
+             <button
+                webStyle = {webStyle}
+                linkText = {"Start Over"}
+                adminSettings = {adminSettings}
+                localDisplaySettings = {localDisplaySettings}
+              
+                style={{backgroundColor:webStyle.colors[componentStyles.backgroundColor], boxShadow: borderAndShadow,color:webStyle.colors[componentStyles.textColor]}}
+                className = {"py-3 w-50 justify-content-center "+borderShape}
+                onClick = {()=>{
+                    appMethods.startOver()
+                    
+                }}
+            >
+                Start Over
+            </button>
+            
+          
+        </div>
+        </ComponentMargin>
+        
+      
+      //   <div 
+      //   style={{...props.style}}      
+      //   className=" " 
+      //   data-no-dnd="true"        
+      //   onMouseEnter={() => {
+      //   showButtons(true);
+      // }}
+      // onMouseLeave={() => {
+      //   showButtons(false);
+      // }}
+    
+      )
+  }

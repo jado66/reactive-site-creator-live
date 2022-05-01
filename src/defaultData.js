@@ -57,6 +57,14 @@ export const defaultSiteData = {
                 }
               },
               {
+                name: "StartOver",
+                id: `Home-StartOver-4-019`,
+                content: {
+                  linkText: "Start Over",
+                  href: "/"
+                }
+              },
+              {
                 name: "Footer",
                 id: `Home-Footer-2-051 `,
                 content:{}
@@ -232,7 +240,7 @@ export const defaultSiteData = {
                     }
                 },
                 {
-                    name: "PictureSlideShow",
+                    name: "MediaSlideShow",
                     id: `Components-PhotoGallery-21-001`,
                     content:{}
                 },

@@ -1,6 +1,6 @@
 import Website from "reactive-site-creator/dist/components/Website";
 
-import { PDFViewer, HorizontalBreak } from "./ExtraComponents";
+import { PDFViewer, HorizontalBreak, StartOver } from "./ExtraComponents";
 import { defaultSiteData, componentStyles } from "./defaultData";
 import './App.css'
 
@@ -15,12 +15,18 @@ const componentOptions = {
     componentName: "Horizontal Break",
     component: HorizontalBreak,
     isNestedComponent: false
+  },
+  StartOver:{
+    componentName: "StartOver",
+    component: StartOver,
+    isNestedComponent: false
   }
 }
 
 function App() {
   return (
-    <Website
+    <div id ="body">
+<Website
       defaultSiteData = {defaultSiteData}
       componentStyles = {componentStyles}
       colors = {{
@@ -36,6 +42,8 @@ function App() {
       basename = {"/reactive-site-creator-live"}
       isAdmin = {true}
     />
+    </div>
+    
   );
 }
 
