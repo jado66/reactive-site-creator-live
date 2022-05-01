@@ -1,7 +1,7 @@
 {
   "name": "reactive-site-creator-live",
   "homepage": "https://jado66.github.io/reactive-site-creator-live/",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
